@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Planifi</title>
+</head>
+<body>
+
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#" class="logo">Planifi</a>
+            <ul class="navbar">
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </header>
+
+        <div class="contenido">
+            <div class="tituloBox">
+                <h2>DESPÍDETE DEL CAOS<br></h2>
+                <h2>CON <span>PLANIFI</span></h2>
+                <p>organiza tu mundo con inteligencia</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="imgBOX">
+                <img src="fondo.png" alt="">
+            </div>
+        </div>        
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <section id="quienes-somos" class="section-about">
+        <div class="container">
+            <h2 class="heading-secondary">¿Quiénes somos?</h2>
+            <p class="text-about">Somos un equipo apasionado dedicado a simplificar la gestión empresarial. Nuestro objetivo es brindarte herramientas efectivas para el éxito de tu negocio.</p>
+            <h3>Testimonios</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Excelente servicio, Planifi ha simplificado nuestra gestión de nóminas de manera increíble. ¡Altamente recomendado!"</p>
+                    <p>- Cliente Satisfecho</p>
+                </div>
+                <div class="testimonial">
+                    <p>"La automatización de las planillas nos ha ahorrado tiempo y recursos valiosos. ¡Gracias, Planifi!"</p>
+                    <p>- Cliente Feliz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section-benefits">
+        <div class="container">
+            <h2 class="heading-secondary">Beneficios</h2>
+            <ul class="benefits-list">
+                <li class="benefits-item">Automatización del pago de la planilla</li>
+                <li class="benefits-item">Análisis detallado de la planilla</li>
+                <li class="benefits-item">Reportes financieros precisos</li>
+                <li class="benefits-item">Evaluación de horas empleadas en proyectos</li>
+                <li class="benefits-item">Ahorro de tiempo y recursos</li>
+                <li class="benefits-item">Mayor eficiencia operativa</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section-map">
+        <div class="container">
+            <h2 class="heading-secondary">Ubicación</h2>
+            <div class="map-container">
+                <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.750483368735!2d-77.0330297846708!3d-12.053969582062464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f009f039c3%3A0x53b3d30823126b4e!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses!2spe!4v1680782107748!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-info">
+                <h3>Ingrese la información de contacto</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-contact">
+        <div class="container">
+            <h2 class="heading-secondary">Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="phone.png" alt="Teléfono" width="45" height="45" class="contact-icon">
+                    <p class="contact-text">Teléfono: +51 123 456 789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="email.png" alt="Correo electrónico" width="45" height="45" class="contact-icon">
+                    <p class="contact-text">Email: info@planifi.com</p>
+                </div>
+            </div>
+            <ul class="redesSociales">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            <p>&copy; 2024 Planifi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

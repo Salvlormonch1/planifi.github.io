@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+ }
+
+body {
+    background: #000000;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40 px 100 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #57C600;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    color: #8ef988;
+}
+
+/* Contenido */
+
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.contenido .tituloBox h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.contenido .tituloBox h2 span {
+    background: #57C600;
+    color: #ffffff;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #57C600;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.contenido .tituloBox a:hover {
+    color: #ffffff;
+    background: #8ef988;
+}
+
+.contenido .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+}
+
+.contenido .imgBox img {
+    width: 480px;
+}
+
+
+/* Ciruculo */
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #57C600;
+    clip-path: circle(650px at right 750px);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Otros estilos... */
+
+/* Títulos de sección */
+.heading-secondary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Texto sobre nosotros, beneficios, etc. */
+.text-about,
+.benefits-item,
+.contact-text,
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Establecer diferentes fondos para cada sección */
+
+/* Sección de Quiénes Somos */
+.section-about {
+    background-color: #F7CAC9; /* Rosa claro */
+    padding: 40px;
+}
+
+/* Sección de Beneficios */
+.section-benefits {
+    background-color: #A2D5F2; /* Azul claro */
+    padding: 40px;
+}
+
+/* Sección de Ubicación */
+.section-map {
+    background-color: #FFE4B5; /* Amarillo claro */
+    padding: 40px;
+}
+
+/* Sección de Contacto */
+.section-contact {
+    background-color: #D4A5A5; /* Rosa suave */
+    padding: 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #E5E5E5; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 5px;
+    flex: 0 0 48%; /* Ancho del testimonio */
+}
+
+.redesSociales {
+    position: absolute;
+    right: 50;
+    bottom: -20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: #000000;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li a:hover {
+    color: #ffd5d5;
+}
